@@ -5,10 +5,6 @@ return {
     require("nightfox").setup({
       palettes = {
         carbonfox = {
-          LazyH1 = { fg = "#c94f6d", style = "bold" },
-          LazyButton = { bg = "bg3", fg = "fg2" },
-          LazyButtonActive = { bg = "sel1", fg = "fg1", style = "bold" },
-
           -- Base palette colors (using Shade variants from your Helix theme)
           black = { base = "#393b44", bright = "#4a4c55", dim = "#2e3038" },
           red = { base = "#c94f6d", bright = "#d66083", dim = "#b3466a" },
@@ -79,9 +75,9 @@ return {
       },
       groups = {
         carbonfox = {
-          -- Override specific highlight groups if needed
-          -- Comment = { fg = "palette.comment" },
-          -- LineNr = { fg = "palette.fg3" },
+          LazyH1 = { fg = "palette.red.base", style = "bold" },
+          LazyButton = { bg = "palette.bg3", fg = "palette.fg2" },
+          LazyButtonActive = { bg = "palette.sel1", fg = "palette.fg1", style = "bold" },
         },
       },
       options = {
