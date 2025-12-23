@@ -78,10 +78,12 @@ return {
           LazyH1 = { fg = "palette.red.base", style = "bold" },
           LazyButton = { bg = "palette.bg3", fg = "palette.fg2" },
           LazyButtonActive = { bg = "palette.sel1", fg = "palette.fg1", style = "bold" },
+          CursorLine = { bg = "#555555" },
+          CursorLineNr = { fg = "palette.white.base", style = "bold" }, -- Keep line number highlighted
         },
       },
       options = {
-        transparent = false, -- Set to true if you want transparent background
+        transparent = true, -- Set to true if you want transparent background
         terminal_colors = true,
         dim_inactive = false,
         styles = {
